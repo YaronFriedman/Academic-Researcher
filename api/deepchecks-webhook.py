@@ -36,7 +36,7 @@ If the user asks a general question (not about a specific paper), answer helpful
 """
 
 
-@app.post("/api/deepchecks_webhook")
+@app.post("/api/deepchecks-webhook")
 @app.post("/")
 
 async def execute_app(request: Request) -> JSONResponse:

@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(source .venv/bin/activate)",
+      "Bash(source .env)",
+      "Bash(python -c \":*)",
+      "Read(//private/tmp/**)",
+      "Bash(git init:*)",
+      "Bash(git remote:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "WebFetch(domain:docs.deepchecks.com)",
+      "Bash(python3 run_deepchecks_eval.py)",
+      "Bash(curl -s https://academic-researcher-f3jqqeum8-yarons-projects-6c07b12d.vercel.app/api/deepchecks_webhook)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" https://academic-researcher-f3jqqeum8-yarons-projects-6c07b12d.vercel.app/api/deepchecks_webhook)",
+      "Bash(curl -s -w \"\\\\nHTTP %{http_code}\" https://academic-researcher-f3jqqeum8-yarons-projects-6c07b12d.vercel.app/api)",
+      "Bash(curl -s -w \"\\\\nHTTP %{http_code}\" https://academic-researcher-f3jqqeum8-yarons-projects-6c07b12d.vercel.app/api/index)",
+      "Bash(curl -s -w \"\\\\nHTTP %{http_code}\" https://academic-researcher-yarons-projects-6c07b12d.vercel.app/api/deepchecks_webhook)",
+      "Bash(curl -s https://academic-researcher-l00pt7kt1-yarons-projects-6c07b12d.vercel.app/api)"
+    ]
+  }
+}
