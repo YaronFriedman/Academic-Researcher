@@ -37,6 +37,8 @@ If the user asks a general question (not about a specific paper), answer helpful
 
 
 @app.post("/api/deepchecks_webhook")
+@app.post("/")
+
 async def execute_app(request: Request) -> JSONResponse:
     """Receive a Deepchecks execute_app request and return the agent response."""
     body = await request.json()
